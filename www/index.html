@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script   src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+</head>
+<body>
+  <ons-page>
+    <div style="padding-top:1em; text-align: center;">
+      <input type="file" id="file" accept="image/*" />
+      <div id="productResult">
+        <div>
+          <img id="productImage" style="width:90%" />
+        </div>
+        <div>
+          選択された商品は<strong id="productName"></strong>で、
+          種類は<strong id="productCategory"></strong>です。<br />
+          この商品は<a id="productUrl"><strong id="productTitle"></strong></a>
+          で購入できるようです。
+        </div>
+      </div>
+    </div>
+    
+  </ons-page>
+  
+  <button id="submit">送信</button>
+  <script src="js/app.js"></script>
+</body>
+</html>
